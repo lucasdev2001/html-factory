@@ -2,31 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-input[type="checkbox"] {
-  -webkit-appearance: initial;
-  appearance: initial;
-  background: white;
-  padding: 4px;
-  border: solid black 1px;
-  position: relative;
+:root {
+  --form-control-color: black;
+  --form-control-disabled: #959495;
 }
 
-input[type="checkbox"]:checked:after {
-  content: "X";
-  color: black;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
 }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.font-5 {
-  font-size: 5.5pt;
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+@page {
+  table,
+  th,
+  td {
+    border: 0.5px solid black;
+    border-collapse: collapse;
+  }
+}
+
+@layer components {
+  .section-border {
+    @apply border border-solid border-black;
+  }
+
+  .checkbox-container {
+    @apply flex place-items-center gap-1;
+  }
 }
