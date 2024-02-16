@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="checkbox"] {
+  -webkit-appearance: initial;
+  appearance: initial;
+  background: white;
+  padding: 4px;
+  border: solid black 1px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "X";
+  color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-5 {
+  font-size: 5.5pt;
+}
