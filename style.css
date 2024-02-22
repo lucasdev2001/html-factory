@@ -25,9 +25,9 @@ input[type="checkbox"] {
 
   font: inherit;
   color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid currentColor;
+  width: 1.2em;
+  height: 1.2em;
+  border: 0.1em solid currentColor;
 
   display: grid;
   place-content: center;
@@ -35,8 +35,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"]::before {
   content: "";
-  width: 0.65em;
-  height: 0.65em;
+  width: 0.75em;
+  height: 0.75em;
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -80,21 +80,23 @@ td {
   border-collapse: collapse;
 }
 
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 @page {
+  margin: 10px;
   table,
   th,
   td {
-    border: 0.5px solid black;
+    border: 0.3px solid black;
     border-collapse: collapse;
   }
 }
 
-@layer components {
-  .section-border {
-    @apply border border-solid border-black;
-  }
-
-  .checkbox-container {
-    @apply flex place-items-center gap-1;
-  }
+.step-font-size {
+  font-size: 5px;
 }
