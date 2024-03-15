@@ -6,238 +6,296 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html factory</title>
   </head>
-  <body class="flex flex-col gap-3">
-    <!-- CABEÇALHO -->
+  <body>
+    <!-- page one -->
+    <div class="flex flex-col gap-2 h-screen" style="break-after: always">
+      <!-- CABEÇALHO -->
 
-    <div class="font-bold text-center border border-black text-[6px]">
-      <h1>
-        FOLHA DE LEITURA RADIOLÓGICA - CLASSIFICAÇÃO INTERNACIONAL DE
-        <br />
-        RADIOGRAFIAS DE PNEUMOCONIOSE - OIT 2011
-      </h1>
-    </div>
+      <div class="font-bold text-center border border-black grid">
+        <h1>FOLHA DE LEITURA RADIOLÓGICA - CLASSIFICAÇÃO INTERNACIONAL DE</h1>
+        <h1>RADIOGRAFIAS DE PNEUMOCONIOSE - OIT 2011</h1>
+      </div>
 
-    <!-- PACIENTE -->
-    <div
-      class="grid grid-cols-4 grid-rows-2 border border-black step-font-size"
-    >
-      <div class="col-span-4 flex divide-x divide-black">
-        <div class="basis-1/2 p-1">
-          <p>NOME DO PACIENTE</p>
-          <p>INSERT VARIABLE HERE</p>
-        </div>
-        <div class="basis-1/2 p-1">
-          <p>CONVÊNIO</p>
-          <p>INSERT VARIABLE HERE</p>
-        </div>
-        <div class="basis-1/4 p-1"><p>DATA DO RX</p></div>
-      </div>
-      <div class="border-t p-1 border-e border-black">
-        <p>Nº DO RX</p>
-        <p>INSERT VARIABLE HERE</p>
-      </div>
-      <div class="border-t p-1 border-e border-black">
-        <p>LEITOR (INICIAIS)</p>
-        <p>INSERT VARIABLE HERE</p>
-      </div>
-      <div class="border-t p-1 border-e border-black">
-        <p>RX DIGITAL</p>
-        <div class="flex">
-          <div class="flex place-items-center basis-1/2 gap-1">
-            <input type="checkbox" />
-            <label>Sim</label>
+      <!-- PACIENTE -->
+      <div class="grid grid-cols-4 grid-rows-2 border border-black">
+        <div class="col-span-4 flex divide-x divide-black">
+          <div class="basis-1/2 p-1">
+            <p>NOME DO PACIENTE</p>
+            <p>INSERT VARIABLE HERE</p>
           </div>
-          <div class="flex place-items-center basis-1/2 gap-1">
-            <input type="checkbox" />
-            <label>Não</label>
+          <div class="basis-1/2 p-1">
+            <p>CONVÊNIO</p>
+            <p>INSERT VARIABLE HERE</p>
           </div>
-        </div>
-      </div>
-      <div class="border-t p-1 border-black">
-        <p>LEITURA EM NEGATOSCÓPIO</p>
-        <div class="flex">
-          <div class="flex place-items-center basis-1/2 gap-1">
-            <input type="checkbox" />
-            <label>Sim</label>
-          </div>
-          <div class="flex place-items-center basis-1/2 gap-1">
-            <input type="checkbox" />
-            <label>Não</label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRIMEIRA ETAPA -->
-
-    <div class="grid grid-cols-2 border border-black step-font-size">
-      <div class="flex gap-1">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 1A </span>
-        </div>
-        <div class="flex-1 p-1 border-e border-black">
-          <div class="flex">
-            <span class="basis-1/2"> Qualidade técnica </span>
-            <div class="basis-1/2 flex gap-1">
-              <div class="flex place-items-center gap-1">
-                <input type="checkbox" />
-                <label>1</label>
-              </div>
-              <div class="flex place-items-center gap-1">
-                <input type="checkbox" />
-                <label>2</label>
-              </div>
-              <div class="flex place-items-center gap-1">
-                <input type="checkbox" />
-                <label>3</label>
-              </div>
-              <div class="flex place-items-center gap-1">
-                <input type="checkbox" />
-                <label>4</label>
-              </div>
-            </div>
-          </div>
-          <div>
-            <p>COMENTÁRIO:</p>
+          <div class="basis-1/4 p-1">
+            <p>DATA DO RX</p>
             <p>INSERT VARIABLE HERE</p>
           </div>
         </div>
-      </div>
-      <div class="flex gap-1">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 1B </span>
+        <div class="border-t p-1 border-e border-black">
+          <p>Nº DO RX</p>
+          <p>INSERT VARIABLE HERE</p>
         </div>
-        <div class="flex-1 p-1">
-          <p>RADIOGRAFIA NORMAL:</p>
+        <div class="border-t p-1 border-e border-black">
+          <p>LEITOR (INICIAIS)</p>
+          <p>INSERT VARIABLE HERE</p>
+        </div>
+        <div class="border-t p-1 border-e border-black">
+          <p>RX DIGITAL</p>
           <div class="flex">
             <div class="flex place-items-center basis-1/2 gap-1">
               <input type="checkbox" />
-              <label>SIM (finalizar a leitura) </label>
+              <label>Sim</label>
             </div>
             <div class="flex place-items-center basis-1/2 gap-1">
               <input type="checkbox" />
-              <label>NÃO (passe p/ a seção 2)</label>
+              <label>Não</label>
+            </div>
+          </div>
+        </div>
+        <div class="border-t p-1 border-black">
+          <p>LEITURA EM NEGATOSCÓPIO</p>
+          <div class="flex">
+            <div class="flex place-items-center basis-1/2 gap-1">
+              <input type="checkbox" />
+              <label>Sim</label>
+            </div>
+            <div class="flex place-items-center basis-1/2 gap-1">
+              <input type="checkbox" />
+              <label>Não</label>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- SEGUNDA ETAPA -->
+      <!-- PRIMEIRA ETAPA -->
 
-    <div class="flex flex-col border border-black step-font-size">
-      <div class="flex">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 2A </span>
-        </div>
-        <div class="flex-1 flex p-1 place-items-center">
-          <div class="basis-1/4">
-            <span>
-              ALGUMA ANORMALIDADE DE PARÊNQUIMA
-              <br />
-              CONSISTENTE COM PNEUMOCNIOSO:
-            </span>
+      <div class="grid grid-cols-2 border border-black">
+        <div class="flex gap-1">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 1A </span>
           </div>
-          <div class="basis-1/2">
+          <div class="flex-1 p-1 border-e border-black">
+            <div class="flex">
+              <span class="basis-1/2"> Qualidade técnica </span>
+              <div class="basis-1/2 flex gap-1">
+                <div class="flex place-items-center gap-1">
+                  <input type="checkbox" />
+                  <label>1</label>
+                </div>
+                <div class="flex place-items-center gap-1">
+                  <input type="checkbox" />
+                  <label>2</label>
+                </div>
+                <div class="flex place-items-center gap-1">
+                  <input type="checkbox" />
+                  <label>3</label>
+                </div>
+                <div class="flex place-items-center gap-1">
+                  <input type="checkbox" />
+                  <label>4</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p>COMENTÁRIO:</p>
+              <p>INSERT VARIABLE HERE</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-1">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 1B </span>
+          </div>
+          <div class="flex-1 p-1">
+            <p>RADIOGRAFIA NORMAL:</p>
             <div class="flex">
               <div class="flex place-items-center basis-1/2 gap-1">
                 <input type="checkbox" />
-                <label>SIM (complete 2B e 2C) </label>
+                <label>SIM (finalizar a leitura) </label>
               </div>
               <div class="flex place-items-center basis-1/2 gap-1">
                 <input type="checkbox" />
-                <label>NÃO (passe para a seção 3) </label>
+                <label>NÃO (passe p/ a seção 2)</label>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="border-t border-black flex">
-        <div class="grid place-content-start shrink">
-          <span class="outline outline-1 p-1"> 2B </span>
+
+      <!-- SEGUNDA ETAPA -->
+
+      <div class="flex flex-col border border-black">
+        <div class="flex">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 2A </span>
+          </div>
+          <div class="flex-1 flex p-1 place-items-center">
+            <div class="basis-1/3 grid">
+              <span> ALGUMA ANORMALIDADE DE PARÊNQUIMA </span>
+              <span> CONSISTENTE COM PNEUMOCNIOSO: </span>
+            </div>
+            <div class="basis-1/2">
+              <div class="flex">
+                <div class="flex place-items-center basis-1/2 gap-1">
+                  <input type="checkbox" />
+                  <label>SIM (complete 2B e 2C) </label>
+                </div>
+                <div class="flex place-items-center basis-1/2 gap-1">
+                  <input type="checkbox" />
+                  <label>NÃO (passe para a seção 3) </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex-1 p-1 basis-1/2 border-e border-black">
-          <p>PEQUENAS OPACIDADES:</p>
-          <div class="flex gap-5 justify-between">
-            <div class="basis-1/3">
-              <p>a) Forma/Tamanho</p>
-              <div class="flex gap-1">
-                <table class="w-full">
-                  <tr class="text-center">
-                    <td colspan="2">Primária</td>
+        <div class="border-t border-black flex">
+          <div class="grid place-content-start shrink">
+            <span class="outline outline-1 p-1"> 2B </span>
+          </div>
+          <div class="flex-1 p-1 basis-1/2 border-e border-black">
+            <p>PEQUENAS OPACIDADES:</p>
+            <div class="flex gap-5 justify-between pb-3 pt-3 pe-3">
+              <div class="basis-1/3">
+                <p>a) Forma/Tamanho</p>
+                <div class="flex gap-1">
+                  <table class="w-full">
+                    <tr class="text-center">
+                      <td colspan="2">Primária</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>p</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>s</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>q</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>t</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>r</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>u</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="w-full">
+                    <tr class="text-center">
+                      <td colspan="2">Secundária</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>p</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>s</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>q</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>t</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>r</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex place-items-center gap-1">
+                          <input type="checkbox" />
+                          <label>u</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="basis-1/3">
+                <p>b) Zonas</p>
+                <table class="text-center w-full">
+                  <tr>
+                    <td>D</td>
+                    <td>E</td>
                   </tr>
                   <tr>
-                    <td>
-                      <div class="flex place-items-center gap-1">
-                        <input type="checkbox" />
-                        <label>p</label>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flex place-items-center gap-1">
-                        <input type="checkbox" />
-                        <label>s</label>
-                      </div>
-                    </td>
+                    <td>X</td>
+                    <td>X</td>
                   </tr>
                   <tr>
-                    <td>
-                      <div class="flex place-items-center gap-1">
-                        <input type="checkbox" />
-                        <label>q</label>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flex place-items-center gap-1">
-                        <input type="checkbox" />
-                        <label>t</label>
-                      </div>
-                    </td>
+                    <td>X</td>
+                    <td>X</td>
                   </tr>
                   <tr>
-                    <td>
-                      <div class="flex place-items-center gap-1">
-                        <input type="checkbox" />
-                        <label>r</label>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="flex place-items-center gap-1">
-                        <input type="checkbox" />
-                        <label>u</label>
-                      </div>
-                    </td>
+                    <td>X</td>
+                    <td>X</td>
                   </tr>
                 </table>
+              </div>
+              <div class="basis-1/3">
+                <p>c) Profussão</p>
                 <table class="w-full">
-                  <tr class="text-center">
-                    <td colspan="2">Secundária</td>
-                  </tr>
                   <tr>
                     <td>
                       <div class="flex place-items-center gap-1">
                         <input type="checkbox" />
-                        <label>p</label>
+                        <label>0/-</label>
                       </div>
                     </td>
                     <td>
                       <div class="flex place-items-center gap-1">
                         <input type="checkbox" />
-                        <label>s</label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="flex place-items-center gap-1">
-                        <input type="checkbox" />
-                        <label>q</label>
+                        <label>0/0</label>
                       </div>
                     </td>
                     <td>
                       <div class="flex place-items-center gap-1">
                         <input type="checkbox" />
-                        <label>t</label>
+                        <label>0/1 </label>
                       </div>
                     </td>
                   </tr>
@@ -245,134 +303,487 @@
                     <td>
                       <div class="flex place-items-center gap-1">
                         <input type="checkbox" />
-                        <label>r</label>
+                        <label>1/0 </label>
                       </div>
                     </td>
                     <td>
                       <div class="flex place-items-center gap-1">
                         <input type="checkbox" />
-                        <label>u</label>
+                        <label>1/1 </label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex place-items-center gap-1">
+                        <input type="checkbox" />
+                        <label> 1/2 </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex place-items-center gap-1">
+                        <input type="checkbox" />
+                        <label> 2/1 </label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex place-items-center gap-1">
+                        <input type="checkbox" />
+                        <label> 2/2 </label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex place-items-center gap-1">
+                        <input type="checkbox" />
+                        <label>2/3 </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex place-items-center gap-1">
+                        <input type="checkbox" />
+                        <label>3/2 </label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex place-items-center gap-1">
+                        <input type="checkbox" />
+                        <label>3/3 </label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex place-items-center gap-1">
+                        <input type="checkbox" />
+                        <label> 3/+ </label>
                       </div>
                     </td>
                   </tr>
                 </table>
               </div>
             </div>
-            <div class="basis-1/3">
-              <p>b) Zonas</p>
-              <table class="text-center w-full">
-                <tr>
-                  <td>D</td>
-                  <td>E</td>
-                </tr>
-                <tr>
-                  <td>X</td>
-                  <td>X</td>
-                </tr>
-                <tr>
-                  <td>X</td>
-                  <td>X</td>
-                </tr>
-                <tr>
-                  <td>X</td>
-                  <td>X</td>
-                </tr>
-              </table>
+          </div>
+          <div class="flex flex-shrink basis-1/3">
+            <div class="grid place-content-start">
+              <span class="outline outline-1 p-1"> 2C </span>
             </div>
-            <div class="basis-1/3">
-              <p>c) Profussão</p>
-              <table class="w-full">
-                <tr>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label>0/-</label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label>0/0</label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label>0/1 </label>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label>1/0 </label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label>1/1 </label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label> 1/2 </label>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label> 2/1 </label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label> 2/2 </label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label>2/3 </label>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label>3/2 </label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label>3/3 </label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="flex place-items-center gap-1">
-                      <input type="checkbox" />
-                      <label> 3/+ </label>
-                    </div>
-                  </td>
-                </tr>
-              </table>
+            <div class="flex-1 p-2">
+              <p>GRANDES OPACIDADES:</p>
+              <div class="grid grid-cols-4 content-center h-full">
+                <div
+                  class="flex place-items-center gap-1 border border-black p-1"
+                >
+                  <input type="checkbox" />
+                  <label> 0 </label>
+                </div>
+                <div
+                  class="flex place-items-center gap-1 border border-black p-1"
+                >
+                  <input type="checkbox" />
+                  <label> A </label>
+                </div>
+                <div
+                  class="flex place-items-center gap-1 border border-black p-1"
+                >
+                  <input type="checkbox" />
+                  <label> B </label>
+                </div>
+
+                <div
+                  class="flex place-items-center gap-1 border border-black p-1"
+                >
+                  <input type="checkbox" />
+                  <label> C </label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-shrink basis-1/3">
+      </div>
+      <!-- TERCEIRA ETAPA -->
+
+      <div class="flex flex-col border border-black">
+        <div class="flex">
           <div class="grid place-content-start">
-            <span class="outline outline-1 p-1"> 2C </span>
+            <span class="outline outline-1 p-1"> 3A </span>
           </div>
-          <div class="flex-1 p-2">
-            <p>GRANDES OPACIDADES:</p>
-            <div class="grid grid-cols-4 content-center h-full">
+          <div class="flex-1 flex p-1 place-items-center">
+            <span class="">
+              ALGUMA ANORMALIDADE PLEURAL CONSISTENTE COM PNEUMOCONIOSE:
+            </span>
+            <div class="flex justify-around basis-1/2">
+              <div class="flex place-items-center gap-1">
+                <input type="checkbox" />
+                <label>SIM (complete 2B, 3C e 3D) </label>
+              </div>
+              <div class="flex place-items-center gap-1">
+                <input type="checkbox" />
+                <label>NÃO (passe para a seção 4) </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-1 border-t border-black">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 3B </span>
+          </div>
+          <div class="flex flex-col flex-1">
+            <div class="flex pt-1 place-items-center w-full">
+              <div class="basis-1/4">
+                <span> PLACAS PLEURAIS: </span>
+              </div>
+              <div class="basis-1/2">
+                <div class="flex">
+                  <div class="flex place-items-center basis-1/2 gap-1">
+                    <input type="checkbox" />
+                    <label>SIM </label>
+                  </div>
+                  <div class="flex place-items-center basis-1/2 gap-1">
+                    <input type="checkbox" />
+                    <label>NÃO </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 pb-3 pe-3 flex">
+              <div class="flex w-full justify-between gap-5">
+                <!-- first -->
+                <div class="grid grid-cols-3 grid-rows-5 gap-1 grow">
+                  <div></div>
+                  <span class="self-end">LOCAL</span>
+                  <span class="self-end">CALCIFICAÇÃO</span>
+                  <span class="self-center">Parede em perfil</span>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                  <span class="self-center">FRONTAL</span>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                  <span class="self-center">DIAFRAGMA</span>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                  <span class="self-center">Outros locais</span>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- second -->
+                <div class="grid grid-cols-2 grid-rows-5 gap-1 grow">
+                  <div class="col-span-3 self-end grid">
+                    <span> EXTENSÃO: PAREDE </span>
+                    <span> (Combinado em perfil e frontal) </span>
+                  </div>
+                  <div class="flex gap-1 col-span-3">
+                    <div class="grid grid-cols-2 content-center">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 0 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1 grow"
+                      >
+                        <input type="checkbox" />
+                        <label> D </label>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 content-center flex-1">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 1 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 2 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 3 </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 col-span-3">
+                    <div class="grid grid-cols-2 content-center">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 0 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> D </label>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 content-center flex-1">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 1 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 2 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 3 </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- third -->
+                <div class="grid grid-cols-2 grid-rows-5 gap-1 grow">
+                  <div class="col-span-3 grid">
+                    <span> LARGURA (OPCIONAL) </span>
+                    <span> (Mínimo de 3 mm para marcação) </span>
+                  </div>
+                  <div class="flex gap-1 col-span-3">
+                    <div
+                      class="flex items-center justify-center content-center basis-1/4"
+                    >
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1 grow"
+                      >
+                        <input type="checkbox" />
+                        <label> D </label>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 content-center flex-1">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> a </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> b </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> c </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 col-span-3">
+                    <div class="flex items-center content-center basis-1/4">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1 grow"
+                      >
+                        <input type="checkbox" />
+                        <label> E </label>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 content-center flex-1">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> a </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> b </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> c </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex border-t border-black">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 3C </span>
+          </div>
+          <div class="flex-1 flex p-1">
+            <span class="w-full self-center">
+              OBLITERAÇÃO DO SEIO COSTOFRÊNICO:
+            </span>
+            <div class="grid grid-cols-3 content-center w-full">
               <div
                 class="flex place-items-center gap-1 border border-black p-1"
               >
@@ -383,250 +794,49 @@
                 class="flex place-items-center gap-1 border border-black p-1"
               >
                 <input type="checkbox" />
-                <label> A </label>
+                <label> D </label>
               </div>
               <div
                 class="flex place-items-center gap-1 border border-black p-1"
               >
                 <input type="checkbox" />
-                <label> B </label>
-              </div>
-
-              <div
-                class="flex place-items-center gap-1 border border-black p-1"
-              >
-                <input type="checkbox" />
-                <label> C </label>
+                <label> E </label>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- TERCEIRA ETAPA -->
 
-    <div class="flex flex-col border border-black step-font-size">
-      <div class="flex">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 3A </span>
-        </div>
-        <div class="flex-1 flex p-1 place-items-center">
-          <span class="">
-            ALGUMA ANORMALIDADE PLEURAL CONSISTENTE COM PNEUMOCONIOSE:
-          </span>
-          <div class="flex justify-around basis-1/2">
-            <div class="flex place-items-center gap-1">
-              <input type="checkbox" />
-              <label>SIM (complete 2B, 3C e 3D) </label>
-            </div>
-            <div class="flex place-items-center gap-1">
-              <input type="checkbox" />
-              <label>NÃO (passe para a seção 4) </label>
-            </div>
+        <div class="flex gap-1 border-t border-black">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 3D </span>
           </div>
-        </div>
-      </div>
-
-      <div class="flex gap-1 border-t border-black">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 3B </span>
-        </div>
-        <div class="flex flex-col flex-1">
-          <div class="flex pt-1 place-items-center w-full">
-            <div class="basis-1/4">PLACAS PLEURAIS:</div>
-            <div class="basis-1/2">
-              <div class="flex">
-                <div class="flex place-items-center basis-1/2 gap-1">
-                  <input type="checkbox" />
-                  <label>SIM </label>
-                </div>
-                <div class="flex place-items-center basis-1/2 gap-1">
-                  <input type="checkbox" />
-                  <label>NÃO </label>
+          <div class="flex flex-col flex-1">
+            <div class="flex place-items-center w-full pt-1">
+              <div class="basis-1/4">
+                <span> ESPESSAMENTO PLEURAL DIFUSO: </span>
+              </div>
+              <div class="basis-1/2">
+                <div class="flex">
+                  <div class="flex place-items-center basis-1/2 gap-1">
+                    <input type="checkbox" />
+                    <label>SIM </label>
+                  </div>
+                  <div class="flex place-items-center basis-1/2 gap-1">
+                    <input type="checkbox" />
+                    <label>NÃO </label>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="p-1 flex">
-            <div class="grid grid-cols-3 gap-5">
-              <!-- first -->
-              <div class="grid grid-cols-3 grid-rows-5 gap-1">
-                <div></div>
-                <span>LOCAL</span>
-                <span>CALCIFICAÇÃO</span>
-                <span>Parede em perfil</span>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <span>FRONTAL</span>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <span>DIAFRAGMA</span>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <span>Outros locais</span>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-              </div>
-              <!-- second -->
-              <div class="grid grid-cols-2 grid-rows-5 gap-1">
-                <div class="col-span-3">
-                  EXTENSÃO: PAREDE <br />
-                  (Combinado em perfil e frontal)
-                </div>
-                <div class="flex gap-1 col-span-3">
-                  <div class="grid grid-cols-2 content-center">
+            <div class="p-1 pt-5 pb-5 flex">
+              <div class="flex w-full justify-between gap-5">
+                <!-- first -->
+                <div class="grid grid-cols-3 grid-rows-2 gap-1 grow">
+                  <div></div>
+                  <span class="self-end">LOCAL</span>
+                  <span class="self-end">CALCIFICAÇÃO</span>
+                  <span class="self-center">Parede em perfil</span>
+                  <div class="grid grid-cols-3 content-center h-full">
                     <div
                       class="flex place-items-center gap-1 border border-black p-1"
                     >
@@ -639,107 +849,6 @@
                       <input type="checkbox" />
                       <label> D </label>
                     </div>
-                  </div>
-
-                  <div class="grid grid-cols-3 content-center flex-1">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 1 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 2 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 3 </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex gap-1 col-span-3">
-                  <div class="grid grid-cols-2 content-center">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 0 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> D </label>
-                    </div>
-                  </div>
-
-                  <div class="grid grid-cols-3 content-center flex-1">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 1 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 2 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 3 </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- third -->
-              <div class="grid grid-cols-2 grid-rows-5 gap-1">
-                <div class="col-span-3">
-                  LARGURA (OPCIONAL)
-                  <br />
-                  (Mínimo de 3 mm para marcação)
-                </div>
-                <div class="flex gap-1 col-span-3">
-                  <div class="grid grid-cols-2 content-center basis-1/4">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> D </label>
-                    </div>
-                  </div>
-
-                  <div class="grid grid-cols-3 content-center flex-1">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> a </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> b </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> c </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex gap-1 col-span-3">
-                  <div class="grid grid-cols-2 content-center basis-1/4">
                     <div
                       class="flex place-items-center gap-1 border border-black p-1"
                     >
@@ -747,181 +856,7 @@
                       <label> E </label>
                     </div>
                   </div>
-
-                  <div class="grid grid-cols-3 content-center flex-1">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> a </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> b </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> c </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex border-t border-black">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 3C </span>
-        </div>
-        <div class="flex-1 flex p-1">
-          <span class="w-full"> OBLITERAÇÃO DO SEIO COSTOFRÊNICO: </span>
-          <div class="grid grid-cols-3 content-center w-full">
-            <div class="flex place-items-center gap-1 border border-black p-1">
-              <input type="checkbox" />
-              <label> 0 </label>
-            </div>
-            <div class="flex place-items-center gap-1 border border-black p-1">
-              <input type="checkbox" />
-              <label> D </label>
-            </div>
-            <div class="flex place-items-center gap-1 border border-black p-1">
-              <input type="checkbox" />
-              <label> E </label>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex gap-1 border-t border-black">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 3D </span>
-        </div>
-        <div class="flex flex-col flex-1">
-          <div class="flex place-items-center w-full pt-1">
-            <div class="basis-1/4">ESPESSAMENTO PLEURAL DIFUSO:</div>
-            <div class="basis-1/2">
-              <div class="flex">
-                <div class="flex place-items-center basis-1/2 gap-1">
-                  <input type="checkbox" />
-                  <label>SIM </label>
-                </div>
-                <div class="flex place-items-center basis-1/2 gap-1">
-                  <input type="checkbox" />
-                  <label>NÃO </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-1 flex">
-            <div class="grid grid-cols-3 gap-5">
-              <!-- first -->
-              <div class="grid grid-cols-3 grid-rows-5 gap-1">
-                <div></div>
-                <span>LOCAL</span>
-                <span>CALCIFICAÇÃO</span>
-                <span>Parede em perfil</span>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <span>FRONTAL</span>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <div class="grid grid-cols-3 content-center h-full">
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> 0 </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> D </label>
-                  </div>
-                  <div
-                    class="flex place-items-center gap-1 border border-black p-1"
-                  >
-                    <input type="checkbox" />
-                    <label> E </label>
-                  </div>
-                </div>
-                <span></span>
-                <div></div>
-                <div></div>
-                <span></span>
-                <div></div>
-                <div></div>
-              </div>
-              <!-- second -->
-              <div class="grid grid-cols-2 grid-rows-5 gap-1">
-                <div class="col-span-3">
-                  EXTENSÃO: PAREDE <br />
-                  (Combinado em perfil e frontal)
-                </div>
-                <div class="flex gap-1 col-span-3">
-                  <div class="grid grid-cols-2 content-center">
+                  <div class="grid grid-cols-3 content-center h-full">
                     <div
                       class="flex place-items-center gap-1 border border-black p-1"
                     >
@@ -934,107 +869,6 @@
                       <input type="checkbox" />
                       <label> D </label>
                     </div>
-                  </div>
-
-                  <div class="grid grid-cols-3 content-center flex-1">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 1 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 2 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 3 </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex gap-1 col-span-3">
-                  <div class="grid grid-cols-2 content-center">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 0 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> D </label>
-                    </div>
-                  </div>
-
-                  <div class="grid grid-cols-3 content-center flex-1">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 1 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 2 </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> 3 </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- third -->
-              <div class="grid grid-cols-2 grid-rows-5 gap-1">
-                <div class="col-span-3">
-                  LARGURA (OPCIONAL)
-                  <br />
-                  (Mínimo de 3 mm para marcação)
-                </div>
-                <div class="flex gap-1 col-span-3">
-                  <div class="grid grid-cols-2 content-center basis-1/4">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> D </label>
-                    </div>
-                  </div>
-
-                  <div class="grid grid-cols-3 content-center flex-1">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> a </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> b </label>
-                    </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> c </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex gap-1 col-span-3">
-                  <div class="grid grid-cols-2 content-center basis-1/4">
                     <div
                       class="flex place-items-center gap-1 border border-black p-1"
                     >
@@ -1042,25 +876,195 @@
                       <label> E </label>
                     </div>
                   </div>
+                  <span class="self-center">FRONTAL</span>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-3 content-center h-full">
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> 0 </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> D </label>
+                    </div>
+                    <div
+                      class="flex place-items-center gap-1 border border-black p-1"
+                    >
+                      <input type="checkbox" />
+                      <label> E </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- second -->
+                <div class="grid grid-cols-2 grid-rows-2 gap-1 grow">
+                  <div class="col-span-3 grid self-end">
+                    <span> EXTENSÃO: PAREDE </span>
+                    <span> (Combinado em perfil e frontal) </span>
+                  </div>
+                  <div class="flex gap-1 col-span-3">
+                    <div class="grid grid-cols-2 content-center">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 0 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> D </label>
+                      </div>
+                    </div>
 
-                  <div class="grid grid-cols-3 content-center flex-1">
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> a </label>
+                    <div class="grid grid-cols-3 content-center flex-1">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 1 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 2 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 3 </label>
+                      </div>
                     </div>
-                    <div
-                      class="flex place-items-center gap-1 border border-black p-1"
-                    >
-                      <input type="checkbox" />
-                      <label> b </label>
+                  </div>
+                  <div class="flex gap-1 col-span-3">
+                    <div class="grid grid-cols-2 content-center">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 0 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> D </label>
+                      </div>
                     </div>
+
+                    <div class="grid grid-cols-3 content-center flex-1">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 1 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 2 </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> 3 </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- third -->
+                <div class="grid grid-cols-2 grid-rows-2 gap-1 grow">
+                  <div class="col-span-3 grid self-end">
+                    <span> LARGURA (OPCIONAL) </span>
+                    <span> (Mínimo de 3 mm para marcação) </span>
+                  </div>
+                  <div class="flex gap-1 col-span-3">
                     <div
-                      class="flex place-items-center gap-1 border border-black p-1"
+                      class="flex content-center items-center justify-center basis-1/4"
                     >
-                      <input type="checkbox" />
-                      <label> c </label>
+                      <div class="flex gap-1 border border-black p-1 grow">
+                        <input type="checkbox" />
+                        <label> D </label>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 content-center flex-1">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> a </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> b </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> c </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 col-span-3">
+                    <div
+                      class="flex content-center items-center justify-center basis-1/4"
+                    >
+                      <div class="flex gap-1 border border-black p-1 grow">
+                        <input type="checkbox" />
+                        <label> E </label>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 content-center flex-1">
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> a </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> b </label>
+                      </div>
+                      <div
+                        class="flex place-items-center gap-1 border border-black p-1"
+                      >
+                        <input type="checkbox" />
+                        <label> c </label>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1069,128 +1073,210 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- QUARTA ETAPA -->
+      <!-- QUARTA ETAPA -->
 
-    <div class="flex flex-col border border-black step-font-size">
-      <div class="flex">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 4A </span>
-        </div>
-        <div class="flex-1 flex p-1 place-items-center">
-          <span> OUTRAS ANORMALIDADES: </span>
-          <div class="flex justify-around basis-1/2">
-            <div class="flex place-items-center gap-1">
-              <input type="checkbox" />
-              <label>SIM (complete 2B, 3C e 3D) </label>
-            </div>
-            <div class="flex place-items-center gap-1">
-              <input type="checkbox" />
-              <label>NÃO (passe para a seção 4) </label>
+      <div class="flex flex-col border border-black">
+        <div class="flex">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 4A </span>
+          </div>
+          <div class="flex-1 flex p-1 place-items-center">
+            <span> OUTRAS ANORMALIDADES: </span>
+            <div class="flex justify-around basis-1/2">
+              <div class="flex place-items-center gap-1">
+                <input type="checkbox" />
+                <label>SIM (complete 2B, 3C e 3D) </label>
+              </div>
+              <div class="flex place-items-center gap-1">
+                <input type="checkbox" />
+                <label>NÃO (passe para a seção 4) </label>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="flex gap-1 border-t border-black">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 4B </span>
+          </div>
+          <div class="flex flex-col flex-1 gap-2 p-1">
+            <p>SÍMBOLOS (Vide legenda no verso):</p>
+            <table class="w-full">
+              <tr class="text-center">
+                <td class="w-4 h-4">aa</td>
+                <td class="w-4 h-4">ax</td>
+                <td class="w-4 h-4">at</td>
+                <td class="w-4 h-4">bu</td>
+                <td class="w-4 h-4">ca</td>
+                <td class="w-4 h-4">cg</td>
+                <td class="w-4 h-4">cn</td>
+                <td class="w-4 h-4">co</td>
+                <td class="w-4 h-4">cp</td>
+                <td class="w-4 h-4">cv</td>
+                <td class="w-4 h-4">di</td>
+                <td class="w-4 h-4">ef</td>
+                <td class="w-4 h-4">em</td>
+                <td class="w-4 h-4">es</td>
+                <td class="w-4 h-4">fr</td>
+                <td class="w-4 h-4">hi</td>
+                <td class="w-4 h-4">ho</td>
+                <td class="w-4 h-4">id</td>
+                <td class="w-4 h-4">ih</td>
+                <td class="w-4 h-4">kl</td>
+                <td class="w-4 h-4">me</td>
+                <td class="w-4 h-4">pa</td>
+                <td class="w-4 h-4">pb</td>
+                <td class="w-4 h-4">pi</td>
+                <td class="w-4 h-4">px</td>
+                <td class="w-4 h-4">ra</td>
+                <td class="w-4 h-4">rp</td>
+                <td class="w-4 h-4">tb</td>
+                <td class="w-4 h-4">od*</td>
+              </tr>
+              <tr>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+                <td class="h-4 w-4 text-center">x</td>
+              </tr>
+            </table>
+            <span> (*) od: Necessário um comentário. </span>
+          </div>
+        </div>
+
+        <div class="flex border-t border-black">
+          <div class="grid place-content-start">
+            <span class="outline outline-1 p-1"> 4C </span>
+          </div>
+
+          <div class="p-1 flex flex-col">
+            <p>COMENTÁRIOS</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+              quas necessitatibus ullam non harum sed magni rerum aperiam est
+              placeat enim quod provident esse, error perferendis? Molestias vel
+              voluptate consequuntur. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Enim tempore voluptatum repellendus rem facere
+              quos sint harum repudiandae, earum, saepe distinctio consectetur
+              sequi quae
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+              quisquam? Soluta repellat atque beatae incidunt quam corrupti ex
+              tempore est, voluptas, a odio vero doloremque totam ab voluptate
+              repudiandae possimus.
+            </p>
+          </div>
+        </div>
       </div>
+      <!-- END -->
 
-      <div class="flex gap-1 border-t border-black">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 4B </span>
+      <div class="flex border border-black break-inside-avoid">
+        <div class="border-e border-black p-1 basis-1/2">
+          <p>DATA DA LEITURA</p>
+          <span>19/02/204</span>
         </div>
-        <div class="flex flex-col flex-1 gap-2 p-1">
-          <p>SÍMBOLOS (Vide legenda no verso):</p>
-          <table class="w-full">
-            <tr class="text-center">
-              <td class="w-4 h-4">aa</td>
-              <td class="w-4 h-4">ax</td>
-              <td class="w-4 h-4">at</td>
-              <td class="w-4 h-4">bu</td>
-              <td class="w-4 h-4">ca</td>
-              <td class="w-4 h-4">cg</td>
-              <td class="w-4 h-4">cn</td>
-              <td class="w-4 h-4">co</td>
-              <td class="w-4 h-4">cp</td>
-              <td class="w-4 h-4">cv</td>
-              <td class="w-4 h-4">di</td>
-              <td class="w-4 h-4">ef</td>
-              <td class="w-4 h-4">em</td>
-              <td class="w-4 h-4">es</td>
-              <td class="w-4 h-4">fr</td>
-              <td class="w-4 h-4">hi</td>
-              <td class="w-4 h-4">ho</td>
-              <td class="w-4 h-4">id</td>
-              <td class="w-4 h-4">ih</td>
-              <td class="w-4 h-4">kl</td>
-              <td class="w-4 h-4">me</td>
-              <td class="w-4 h-4">pa</td>
-              <td class="w-4 h-4">pb</td>
-              <td class="w-4 h-4">pi</td>
-              <td class="w-4 h-4">px</td>
-              <td class="w-4 h-4">ra</td>
-              <td class="w-4 h-4">rp</td>
-              <td class="w-4 h-4">tb</td>
-              <td class="w-4 h-4">od*</td>
-            </tr>
-            <tr>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-              <td class="h-4 w-4"></td>
-            </tr>
-          </table>
-          <span> (*) od: Necessário um comentário. </span>
-        </div>
-      </div>
-
-      <div class="flex border-t border-black">
-        <div class="grid place-content-start">
-          <span class="outline outline-1 p-1"> 4C </span>
-        </div>
-
-        <div class="flex-1 p-1">
-          <p>COMENTÁRIOS</p>
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quas
-          necessitatibus ullam non harum sed magni rerum aperiam est placeat
-          enim quod provident esse, error perferendis? Molestias vel voluptate
-          consequuntur.
+        <div class="p-1 basis-1/2">
+          <p>ASSINATURA</p>
+          <img src="signature.svg" class="max-w-20" />
         </div>
       </div>
     </div>
-    <!-- END -->
 
-    <div class="grid grid-cols-2 border border-black step-font-size">
-      <div class="border-e border-black p-1">
-        <p>DATA DA LEITURA</p>
-        <span>19/02/204</span>
-      </div>
-      <div class="p-1">
-        <p>ASSINATURA</p>
-        <img src="signature.svg" class="max-w-40 mx-auto" />
+    <!-- page two -->
+
+    <div class="border border-black flex justify-center h-screen">
+      <div class="mt-32">
+        <h3 class="text-center">LEGENDA DOS SÍMBOLOS DA SEÇÃO 4B</h3>
+        <br />
+        <div class="text-justify flex gap-1">
+          <div>
+            <p>aa</p>
+            <p>at</p>
+            <p>ax</p>
+            <p>bu</p>
+            <p>ca</p>
+            <p>cg</p>
+            <p>cn</p>
+            <p>co</p>
+            <p>cp</p>
+            <p>cv</p>
+            <p>di</p>
+            <p>ef</p>
+            <p>em</p>
+            <p>es</p>
+            <p>fr</p>
+            <p>hi</p>
+            <p>id</p>
+            <p>ih</p>
+            <p>kl</p>
+            <p>me</p>
+            <p>pa</p>
+            <p>pb</p>
+            <p>pi</p>
+            <p>px</p>
+            <p>ra</p>
+            <p>rp</p>
+            <p>tb</p>
+            <p>od</p>
+          </div>
+          <div>
+            <p>= aorta aterosclerótica</p>
+            <p>= espessamento pleural apical significativo</p>
+            <p>= coalescência de pequenas opacidades</p>
+            <p>= bolhas</p>
+            <p>= câncer</p>
+            <p>= nódulos não pneumoconióticos calcificados</p>
+            <p>= calcificação de pequenas opacidades pneumoconióticas</p>
+            <p>= anormalidade de forma e tamanho do coração</p>
+            <p>= Cor pulmonale</p>
+            <p>= cavidade</p>
+            <p>= distorção significativa de estrutura intratorácica</p>
+            <p>= derrame pleural</p>
+            <p>= enfisema</p>
+            <p>= calcificações em casca de ovo</p>
+            <p>= fratura(s) de costela(s) recente(s) ou consolidada(s)</p>
+            <p>= aumento de gânglios hilares e/ou mediastinais</p>
+            <p>= borda diafragmática mal definida</p>
+            <p>= borda cardíaca mal definida</p>
+            <p>= linhas septais (Kerley)</p>
+            <p>= mesotelioma</p>
+            <p>= atelectasia laminar</p>
+            <p>= banda(s) parenquimatosa(s)</p>
+            <p>= espessamento pleural de cisura(s) interlobar(es)</p>
+            <p>= pneumotórax</p>
+            <p>= atelectasia redonda</p>
+            <p>= pneumoconiose reumatóide</p>
+            <p>= tuberculose</p>
+            <p>= outras doenças</p>
+          </div>
+        </div>
       </div>
     </div>
 

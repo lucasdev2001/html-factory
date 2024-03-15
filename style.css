@@ -71,6 +71,12 @@ input[type="checkbox"]:disabled {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-small;
+}
+
+
+td,th,table input[type="checkbox"] {
+  padding: 3px;
 }
 
 table,
@@ -97,6 +103,4 @@ td {
   }
 }
 
-.step-font-size {
-  font-size: 5px;
-}
+
